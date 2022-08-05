@@ -169,6 +169,7 @@ header .navbar ul li a:hover{
 }
 
 .home p{
+    text-transform: none;
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
@@ -240,6 +241,7 @@ header .navbar ul li a:hover{
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
+    border-bottom: 2px solid var(--yellow);
 }
 
 .portfolio .box-container .box img{
@@ -252,6 +254,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio .box-container .box .small-button button {
@@ -262,10 +265,83 @@ header .navbar ul li a:hover{
     cursor: pointer;
 }
 
+.portfolio .box-container .box .small-button button:hover {
+    box-shadow: 0 0 12px var(--yellow);
+}
+
 .portfolio .box-container .box .small-button a {
     text-decoration: none;
     color: #111;
 }
+
+.blogs .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.blogs .box-container .box{
+    display: flex;
+    justify-content: space-between;
+    height: 24rem;
+    width: 102rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.blogs .box-container .box img{
+    height:100%;
+    width:40%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .detail-blog {
+    width: 50%;
+    color: #eee;
+    margin: 0 48px;
+}
+
+.blogs .box-container .box .detail-blog h1 {
+    font-size: 32px;
+}
+
+.blogs .box-container .box .detail-blog p {
+    font-size: 16px;
+    margin-top: 14px;
+    text-transform: none;
+}
+
+.blogs .box-container .box .small-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogs .box-container .box .small-button .fa-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.blogs .box-container .box .small-button button {
+    background-color: var(--yellow);
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.blogs .box-container .box .small-button button:hover {
+    box-shadow: 0 0 12px var(--yellow);
+}
+
+.blogs .box-container .box .small-button a {
+    text-decoration: none;
+    color: #111;
+}
+
 
 .contact .row{
     display: flex;
